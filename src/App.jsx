@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { TaskForm } from "./TaskForm";
-import { ToDoList } from "./ToDoList";
 import './App.css'
 
 export default function App(){
@@ -29,7 +28,7 @@ export default function App(){
       return currentTask.map(task => {
           if(task.id === id) {
             return { ...task, completed }
-        }
+          }
         return task
       })
     })
@@ -45,7 +44,30 @@ export default function App(){
     <>
       <h1>ToDo List</h1>
       <TaskForm addTasks={addTask} />
-      <ToDoList ToDos={tasks} toggleTask={toggleTask} deleteTask={deleteTask} />
+      <ul className="list">
+      <h2> My ToDo </h2>
+      {tasks.length === 0 && "No Tasks Added :("}
+      {tasks.map((task) => {//returns an array in the li using the array.map() function
+        return (
+          <li key={task.id}>
+            <label>
+              <input
+                type="checkbox"
+                checked={task.completed}
+                onChange={(event) => toggleTask(task.id, event.target.checked)}
+              />
+              {task.title}
+            </label>
+            <button
+              onClick={() => deleteTask(task.id)} //passing a function that calls deleteTask and passes it in the tasks.id (deletes the task)
+              className="delete"
+            >
+              Delete
+            </button>
+          </li>
+        );
+      })}
+      </ul>
     </>
   );
 }
