@@ -49,7 +49,7 @@ export default function App(){
       <div className="body">
         <form onSubmit={handleSubmit} className="new-item-form">
           <div>
-            <label htmlFor="item">New Task</label>
+            <label htmlFor="item">New Task : </label>
             <input
               value={newItem}
               type="text"
@@ -63,7 +63,7 @@ export default function App(){
         </form>
       </div>
       <ul className="list">
-        <h2> My ToDo </h2>
+        <h2> My ToDo List </h2>
         {tasks.length === 0 && "No Tasks Added :("}
         {tasks.map((task) => {
           //returns an array in the li using the array.map() function
