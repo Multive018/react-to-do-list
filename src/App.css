@@ -16,7 +16,7 @@ h2{
 
 .body{
   display: block;
-  margin: 0 80px;
+  margin: 80px auto;
   padding: 40px;
   max-width: 1000px;
   text-align: center;
@@ -52,7 +52,7 @@ input{
 
 .list{
   display: block;
-  margin: 60px;
+  margin: 60px auto;
   padding: 40px;
   list-style: none;
   border: 2px solid var(--primary-color);

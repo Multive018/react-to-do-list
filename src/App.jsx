@@ -64,7 +64,7 @@ export default function App(){
       </div>
       <ul className="list">
         <h2> My ToDo List </h2>
-        {tasks.length === 0 && "No Tasks Added :("}
+        {tasks.length === 0 && "No Tasks Added :)"}
         {tasks.map((task) => {
           //returns an array in the li using the array.map() function
           return (
