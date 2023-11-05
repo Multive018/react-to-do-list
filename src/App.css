@@ -64,7 +64,7 @@ li{
   background-color:#691faf;
   border-radius: 10px;
   opacity: 0.7;
-  width: 400px;
+  width: 600px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -85,10 +85,10 @@ li:hover{
   .body, .list{
     display: block;
     margin: 20px auto;
-    width: 310px;
+    width: 320px;
   }
 
   li{
-    width: 290px;
+    width: 300px;
   }
 }
