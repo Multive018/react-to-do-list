@@ -82,13 +82,19 @@ li:hover{
 
 
 @media (max-width: 900px){
-  .body, .list{
+  .body{
     display: block;
     margin: 20px auto;
     width: 320px;
   }
 
+  .list{
+    display: block;
+    margin: 10px auto;
+    width: 400px;
+  }
+
   li{
-    width: 300px;
+    width: 350px;
   }
 }
