@@ -54,7 +54,6 @@ input{
   display: block;
   margin: 60px;
   padding: 40px;
-  max-width: 1000px;
   list-style: none;
   border: 2px solid var(--primary-color);
   border-radius: 10px;
@@ -86,10 +85,10 @@ li:hover{
   .body, .list{
     display: block;
     margin: 20px 100px;
-    width: 350px;
+    width: 310px;
   }
 
   li{
-    width: 300px;
+    width: 290px;
   }
 }
