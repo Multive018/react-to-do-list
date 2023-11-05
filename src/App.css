@@ -13,6 +13,7 @@ h2{
   font-size: 20px!important;
 }
 
+
 .body{
   display: block;
   margin: 0 80px;
@@ -54,6 +55,8 @@ input{
   margin: 60px;
   padding: 40px;
   list-style: none;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
 }
 
 li{
@@ -79,7 +82,10 @@ li:hover{
 
 
 @media (max-width: 900px){
-  .body{
-    width: 400px;
+  .body, .list{
+    display: block;
+    margin: 20px 100px;
+    width: 300px;
+
   }
 }
