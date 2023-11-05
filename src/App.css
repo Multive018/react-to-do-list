@@ -84,17 +84,17 @@ li:hover{
 @media (max-width: 1000px){
   .body{
     display: block;
-    margin: 30px auto;
-    width: 340px;
+    margin: 20px auto;
+    width: 350px;
   }
 
   .list{
     display: block;
-    margin: 15px auto;
+    margin: 20px auto;
     width: 400px;
   }
 
   li{
-    width: 380px;
+    width: 400px;
   }
 }
