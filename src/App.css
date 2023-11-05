@@ -84,7 +84,7 @@ li:hover{
 @media (max-width: 900px){
   .body{
     display: block;
-    margin: 20px auto;
+    margin: 30px auto;
     width: 320px;
   }
 
